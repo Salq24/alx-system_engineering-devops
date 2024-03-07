@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#This script will display soimething 10ntimes
+
+cnt=0
+
+while [ $cnt -lt 10 ]
+do
+        if [ $cnt -eq 3 ]
+        then
+            echo "bad luck"
+        elif [ $cnt -eq 7 ]
+	then
+	    echo "good luck"
+	else
+	    echo "Best School"
+	fi
+        ((cnt++))
+done
