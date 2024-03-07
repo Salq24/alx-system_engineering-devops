@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#This script will display soimething 10ntimes
+
+cnt=0
+
+while [ $cnt -lt 10 ]
+do
+        echo "Best School"
+	if [ $cnt -eq 8 ]
+	then
+	echo "Hi"
+	fi
+	((cnt++))
+done
