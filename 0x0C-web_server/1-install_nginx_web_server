@@ -1,8 +1,12 @@
-!#/usr/bin/env bash
+#!/usr/bin/env bash
 #nginx
 
-apt-get update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
+sudo apt-get update
+sudo apt-get -y install nginx
+sudo service nginx start
+sudo ufw allow 'Nginx HTTP'
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
+cp /var/www/html/index.html /var/www/html/index.html.bckp
 echo "Hello World!" > /var/www/html/index.html
-service nginx start
+sudo service nginx restart
