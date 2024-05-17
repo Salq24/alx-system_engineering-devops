@@ -1,4 +1,4 @@
-!#/usr/bin/env bash
+#!/usr/bin/env bash
 #configures nginx to redirect
 
 sudo apt-get update
