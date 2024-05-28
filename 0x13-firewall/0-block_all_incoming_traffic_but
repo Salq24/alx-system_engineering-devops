@@ -1,0 +1,12 @@
+#install ufw
+sudo apt-get update
+sudo apt-get install -y ufw
+
+#enable ports
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+
+#enable ufw firewall
+sudo ufw enable
+sudo ufw status
