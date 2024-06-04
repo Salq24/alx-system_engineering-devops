@@ -12,7 +12,7 @@ if __name__ == '__main__':
     link = user_api + '/' + id_emp
 
     response = requests.get(link)
-    name = response.json().get('name')
+    name = response.json().get('username')
 
     tasks = link + '/todos'
     response = requests.get(tasks)
