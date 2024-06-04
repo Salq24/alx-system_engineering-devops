@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 """return info abt employee"""
 
-
-import sys
-import requests
 import json
-
+import requests
+import sys
 
 if __name__ == '__main__':
     user_api = "https://jsonplaceholder.typicode.com/users"
