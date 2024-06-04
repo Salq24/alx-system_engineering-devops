@@ -2,8 +2,8 @@
 """return info abt employee"""
 
 
-import sys
 import requests
+import sys
 
 
 if __name__ == '__main__':
@@ -26,8 +26,7 @@ if __name__ == '__main__':
             complete += 1
 
     print("Employee {} is done with tasks({}/{}):".
-            format(name, complete, len(to_dos)))
-
+          format(name, complete, len(to_dos)))
 
     for task in completed_tasks:
         print("\t {}".format(task.get('title')))
